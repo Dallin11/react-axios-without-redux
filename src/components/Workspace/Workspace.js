@@ -11,7 +11,7 @@ function Workspace( { initialLoad, creating, currentCustomer } ) {
       {
         creating
         ?
-          <CreateCustomer />
+          <CreateCustomer createCustomer={createCustomer}/>
         :
           initialLoad
           ?
